@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/255/PROD/trunk/PHP/lib/js
+END
+rules.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/22/PROD/trunk/PHP/lib/js/rules.js
+END
+unittest.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/unittest.js
+END
+prod-ajax.js
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/223/PROD/trunk/PHP/lib/js/prod-ajax.js
+END
+controls.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/controls.js
+END
+toggle.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/20/PROD/trunk/PHP/lib/js/toggle.js
+END
+extensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/255/PROD/trunk/PHP/lib/js/extensions.js
+END
+sound.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/sound.js
+END
+scriptaculous.js
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/scriptaculous.js
+END
+browser-detect.js
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/PROD/trunk/PHP/lib/js/browser-detect.js
+END
+dates.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/22/PROD/trunk/PHP/lib/js/dates.js
+END
+dragdrop.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/dragdrop.js
+END
+prototype.js
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/prototype.js
+END
+effects.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/effects.js
+END
+slider.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/slider.js
+END
+behaviour.js
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/22/PROD/trunk/PHP/lib/js/behaviour.js
+END
+eventrules.js
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/22/PROD/trunk/PHP/lib/js/eventrules.js
+END
+builder.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/48/PROD/trunk/PHP/lib/js/builder.js
+END

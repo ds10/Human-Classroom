@@ -1,0 +1,30 @@
+/* THIS IS THE INTERNET EXPLORER HACK SHEET */
+/* V6 AND BELOW */
+
+#header #navigation{
+	right:40px;
+}
+
+#right-column{
+	right:30px;
+}
+
+.tabs li, .button{
+	list-style: none;
+	
+	width:auto;
+	margin:2px;
+	padding:2px;
+	background-color:#FFE6C9;
+	border: 1px #EC7B36 solid;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:10px;
+	display:-moz-inline-box;
+	margin-bottom:3px;
+  	display:-moz-inline-box; 
+ 	display:inline-block;
+ 	-moz-box-orient:vertical;  
+     vertical-align:top; 
+     word-wrap:break-word; 
+}

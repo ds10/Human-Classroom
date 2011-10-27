@@ -1,0 +1,17 @@
+/* THIS IS THE INTERNET EXPLORER V7 AND BELOW HACK SHEET */
+
+.browser li{
+	display:inline;
+}
+
+.tabs li, .button{
+	display:inline;
+}
+
+.fundingbar-outer{
+	display:inline;
+}
+
+.fundingbar-inner{
+	display:inline;
+}
