@@ -219,14 +219,16 @@ class database_record{
 		
 		global $db;
 		
+		
 		if (is_numeric($this->id)){
 			$transaction="UPDATE";
 			$sql="UPDATE ";//If we have an id number it's an update
 	 	} else {
+	 	  
 	 		$transaction="INSERT";
 	 		$sql="INSERT INTO "; //Otherwise we are creating a new record!
 
-	 	}
+	   	}
 	 	$sql.=$this->db_table." ";
 	
 	 	

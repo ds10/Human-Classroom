@@ -38,14 +38,36 @@ class agent_manager{
 	}
 		
 		function qualifyagents($limit=null,$order=null,$dir="ASC"){
-
+	
 			foreach ($this->agents as $agent){
-				$taxman=new taxonomy_manager;
-				print_r($taxman->environment);
+				$taxman=new taxonomy_manager;	
+				
+
+				$rand = rand(0, 5);
+	
+				
+				while ( $rand > 0) {
+						$newprop=new property();
+						$newprop->createself($agent->id,$taxman->agent_variables[array_rand($taxman->agent_variables)]->term,'0');
+					$rand--;
+				}
+				
+				
+				$rand = rand(0, 5);
+				while ( $rand > 0) {
+						$newprop=new property();
+						$newprop->createself($agent->id,$taxman->environment[array_rand($taxman->environment)]->term,'0');
+					$rand--;
+				}
+				
+				
+	
+				/*
 				print_r($taxman->environment_variables);
 				print_r($taxman->thoughts);
 				print_r($taxman->actions);
 				print_r($taxman->interactions);
+				*/
 			}
 			
 		}

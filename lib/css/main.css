@@ -27,3 +27,5 @@ p  { clear: both; margin: 5px 0 15px; line-height: 1.7em; }
 		#copyright p { margin: 0 0 5px; }
 		#copyright a { color: #60183B; }
 	#bubble { float: right;  font-size: .9em; font-weight: bold; color: #D46FA0; background: url(../images/pink_bubbles.jpg) no-repeat; width: 220px; height: 145px; padding: 52px 30px 0 150px; text-align: right; }
+	
+.person  { border: 3px solid #cccccc; background-color: #f0f8ff; padding: 5px; }	

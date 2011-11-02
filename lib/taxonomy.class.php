@@ -15,6 +15,7 @@ class taxonomy_manager{
 		$this->thoughts= $this->getbysql("SELECT id FROM terms WHERE module_id ='10'");
 		$this->actions= $this->getbysql("SELECT id FROM terms WHERE module_id ='11'");
 		$this->interactions= $this->getbysql("SELECT id FROM terms WHERE module_id ='14'");
+		$this->agent_variables= $this->getbysql("SELECT id FROM terms WHERE module_id ='2'");
 	}
 		
 	function getbysql($sql){

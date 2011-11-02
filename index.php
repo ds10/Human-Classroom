@@ -20,6 +20,10 @@ require_once "lib/init.php";
  	$sql="truncate table agents";
 	$result = $db->query($sql);
 
+	$sql="truncate table properties";
+	$result = $db->query($sql);
+	
+	
  	//now create a new one, start with just creating agents
  	//We have an array of names for our person!
 	$arrayofnames = file("names.txt");
@@ -53,10 +57,18 @@ require_once "lib/init.php";
 	$smarty->display("footers.tpl");
  }elseif($_REQUEST['create'] == "generate"){
 
- 	// We want to show some projects - better make a collection object
-
+ 	// We want to show some agents - better make a collection object
+	
+ 	
+ 	$sql="SELECT * FROM term_classes";
+	$classes=$db->queryarray($sql);
+	$smarty->assign("classes",$classes);
+	$smarty->assign("agents",$agentman->agents);
 	$agentman->qualifyagents();
 	
+	$smarty->display("headers.tpl");
+	$smarty->display("showcreated.tpl");
+	$smarty->display("footers.tpl");
  }else{
 	$smarty->display("headers.tpl");
 	$smarty->display("index.tpl");

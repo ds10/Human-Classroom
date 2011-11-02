@@ -43,7 +43,8 @@ class properties{
 		
 		$sql.=" ORDER BY data ASC ";
 		
-		
+		print $sql;
+		exit();
 		$result=$db->queryarray($sql);
 		
 		foreach ($result as $thisprop){
@@ -97,6 +98,7 @@ class properties{
 
 	function get_byclass($propclass){
 		global $db;
+
 		$properties=array();
 		
 		$sql="SELECT properties.id as id,
@@ -109,9 +111,9 @@ class properties{
 			if (!is_null($this->agent_id)){
 			$sql.="AND agent_id='".$this->agent_id."'";
 			}
-			$sql.=" ORDER BY LOWER(data) ASC ";
+			// $sql.=" ORDER BY LOWER(data) ASC ";
 		$result=$db->queryarray($sql);
-		
+	
 		foreach ($result as $thisprop){
 			
 			$properties[]=new property($thisprop['id']);
@@ -399,17 +401,18 @@ class property extends database_record{
 		
 		//Some props have urls associated with them - standards particularly
 		$this->url=$url;
-		$this->comments=$comment;
+		//$this->comments=$comment;
 		$this->savetodb();
 		
 		
 		//Log this as activity
+		/*
 		global $user;
 		$agentobj=new agent($this->agent_id);
 		$items=$agentobj->activities->get_activities();
 		
 		//check if we have user in last comment
-		/*
+		
 		$lastuser = false;
 		
 		if (isset($items[0]->details)){
