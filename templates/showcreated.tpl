@@ -13,15 +13,15 @@ coming soon..
  <img src="lib/characters/1.png" style="float: right;">
  {$agent->name} is a {foreach item=prop from=$agent->properties->get_byclass('Agent')} {$prop->term} {/foreach}
  {if $agent->properties->get_bymodule('Agent Variables')}
-  and has the following attributes:<br/>
+  <br/><br/>Is:
  	{foreach item=prop from=$agent->properties->get_bymodule('Agent Variables')}
- 	*{$prop->term}
+ 	{$prop->term}
  	<br/>
  	{/foreach}
  {/if}
  <br/>
   {if $agent->properties->get_bymodule('Environment')}
- {$agent->name} owns the following<br/>
+ Owns:<br/>
  	{foreach item=prop from=$agent->properties->get_bymodule('Environment')}
  	*{$prop->term}
  	<br/>
